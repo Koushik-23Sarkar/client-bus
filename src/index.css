@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+:root {
+  --primary: #001539;
+  --primary-container: #102a56;
+  --on-primary: #ffffff;
+  --on-primary-container: #7c92c4;
+  --primary-fixed: #d8e2ff;
+  --primary-fixed-dim: #b0c6fc;
+  --inverse-primary: #b0c6fc;
+
+  --secondary: #a04100;
+  --secondary-container: #fe6b00;
+  --on-secondary: #ffffff;
+  --on-secondary-container: #572000;
+  --secondary-fixed: #ffdbcc;
+  --secondary-fixed-dim: #ffb693;
+
+  --tertiary: #001925;
+  --tertiary-container: #002f41;
+  --on-tertiary: #ffffff;
+  --on-tertiary-container: #009dd0;
+  --tertiary-fixed: #c2e8ff;
+  --tertiary-fixed-dim: #75d1ff;
+
+  --background: #f7fafd;
+  --surface: #f7fafd;
+  --surface-bright: #f7fafd;
+  --surface-variant: #e0e3e6;
+  --surface-container: #ebeef1;
+  --surface-container-low: #f1f4f7;
+  --surface-container-high: #e5e8eb;
+  --surface-container-highest: #e0e3e6;
+  --surface-container-lowest: #ffffff;
+  --surface-dim: #d7dadd;
+  --surface-tint: #485e8d;
+
+  --on-background: #181c1e;
+  --on-surface: #181c1e;
+  --on-surface-variant: #44474f;
+
+  --outline: #747780;
+  --outline-variant: #c4c6d0;
+
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+  --on-error: #ffffff;
+  --on-error-container: #93000a;
+
+  --inverse-surface: #2d3133;
+  --inverse-on-surface: #eef1f4;
+
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-gutter: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background);
+  color: var(--on-background);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.font-display { font-family: var(--font-family); }
+
+input, select, textarea, button {
+  font-family: var(--font-family);
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-scale:active { transform: scale(0.95); }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
