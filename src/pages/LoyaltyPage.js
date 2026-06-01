@@ -15,7 +15,7 @@ export default function LoyaltyPage() {
   const totalSpent = bookings.reduce((s, b) => s + (b.totalAmount || 0), 0);
   const points = Math.floor(totalSpent / 10);
   const tier = points >= 5000 ? 'Platinum' : points >= 2000 ? 'Gold' : points >= 500 ? 'Silver' : 'Bronze';
-  const tierColors = { Bronze: ['#cd7f32', '#8B4513'], Silver: ['#c0c0c0', '#708090'], Gold: ['#FFD700', '#B8860B'], Platinum: ['#e5e4e2', '#6c6c6c'] };
+  // const tierColors = { Bronze: ['#cd7f32', '#8B4513'], Silver: ['#c0c0c0', '#708090'], Gold: ['#FFD700', '#B8860B'], Platinum: ['#e5e4e2', '#6c6c6c'] };
   const tierEmoji = { Bronze: '🥉', Silver: '🥈', Gold: '🥇', Platinum: '💎' };
   const nextTierPoints = points < 500 ? 500 : points < 2000 ? 2000 : points < 5000 ? 5000 : 10000;
   const progressPct = Math.min(100, Math.round((points / nextTierPoints) * 100));

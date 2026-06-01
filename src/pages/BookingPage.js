@@ -91,10 +91,10 @@ export default function BookingPage() {
   const finalTotal   = Math.max(0, baseTotal - discount);
 
   // ── Copy promo code (from offer cards on home page) ──
-  const copyCode = (code) => {
-    navigator.clipboard.writeText(code).catch(() => {});
-    setPromoInput(code);
-  };
+  // const copyCode = (code) => {
+  //   navigator.clipboard.writeText(code).catch(() => {});
+  //   setPromoInput(code);
+  // };
 
   // ── Razorpay payment ──
   const initiatePayment = async () => {
